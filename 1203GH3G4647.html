@@ -423,7 +423,7 @@
     const { DateTime } = luxon;
     luxon.Settings.defaultLocale = 'es';
     function actualizarHora(){
-      const ahora = DateTime.now().setZone('America/Chicago');
+      const ahora = DateTime.now().setZone('America/Boise');
       document.getElementById('hora').textContent = ahora.toFormat("cccc, d 'de' LLLL 'de' yyyy, h:mm a");
     }
     actualizarHora();
